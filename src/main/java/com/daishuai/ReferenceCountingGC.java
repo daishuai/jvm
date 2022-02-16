@@ -11,7 +11,7 @@ public class ReferenceCountingGC {
 
     private static final int _1MB = 1024 * 1024;
 
-    private byte[] bigSize = new byte[_1MB];
+    private final byte[] bigSize = new byte[_1MB];
 
     public static void main(String[] args) {
         ReferenceCountingGC objA = new ReferenceCountingGC();
